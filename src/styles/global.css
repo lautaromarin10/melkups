@@ -8,6 +8,10 @@ html {
   scroll-padding-top: 5rem;
 }
 
+.bg-custom-position {
+  background-position: 50% bottom 12rem;
+}
+
 h1,
 h2,
 h3,
