@@ -16,7 +16,7 @@ const MenuMobile = () => {
     <div className="md:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <Button>
+          <Button variant={"outline"}>
             <MdMenu />
           </Button>
         </SheetTrigger>
