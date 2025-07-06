@@ -1,0 +1,30 @@
+---
+ const img = [
+ {
+        url: "https://cuk-it.com/wp-content/uploads/2018/02/galletitas-trituradas-e1693804724330.jpg",
+        name: "Galletitas trituradas"
+},
+{
+        url: "https://media.istockphoto.com/id/1188604717/es/foto/queso-crema.jpg?s=612x612&w=0&k=20&c=SSrXPwoNkpnyKcYcFBY14l7GIPNqQlchP4BBZYfL0m8=",
+        name: "Queso crema"
+},
+{
+        url: "https://sobreroycagnolo.com/wp-content/uploads/2022/12/ddl-trufas.jpg",
+        name: "Dulce de leche"
+},
+ ]
+---
+
+
+
+<div class="flex flex-col" id="mPrima">
+    <h2 class="container p-4 text-4xl md:text-6xl mx-auto mb-2 xl:mb-2">Materia prima</h2>
+    <div class="grid grid-cols-auto md:grid-cols-3 container p-4 mx-auto gap-4">
+        {img.map((foto) => (
+            <div class="flex flex-col">
+            <img src={foto.url} alt="Postre" class="w-full h-42 md:h-64 object-cover rounded-xl" />
+            <p class="mt-2 text-2xl cursiva">{foto.name}</p>
+            </div>
+        ))}
+    </div>
+</div>

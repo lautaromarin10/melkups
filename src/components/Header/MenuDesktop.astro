@@ -1,0 +1,11 @@
+---
+ import {menuLinks} from "@/utils/menuLinks"
+---
+
+<ul class="flex-row gap-4 hidden md:flex">
+    {
+        menuLinks.map((menu) => (
+            <li class="text-white duration-300 hover:text-secondary"><a href={menu.to}>{menu.label}</a></li>
+            ))
+    }
+</ul>

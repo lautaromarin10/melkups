@@ -1,0 +1,27 @@
+---
+ const img = [
+ {
+        url: "https://i.ibb.co/xqCyp6GX/5cdf9fe29d3b35875ae5c61504edceb5.jpg"
+},
+{
+        url: "https://i.ibb.co/LzLjtSTD/347cd3ae05213156d369b78f750dae33.jpg"
+},
+{
+        url: "https://i.ibb.co/Csv2VNQ2/a96c678dd8757e4b1344c7b46476d7dc.jpg"
+},
+ ]
+---
+
+
+
+<div class="flex flex-col" id="productos">
+    <h2 class="container p-4 text-4xl md:text-6xl mx-auto mb-2 xl:mb-2">Nuestros productos</h2>
+    <div class="grid grid-cols-1 xl:grid-cols-3 container p-4 mx-auto gap-4">
+        {img.map((foto) => (
+            <img src={foto.url} alt="Postre" class="w-full h-64 md:h-96 object-cover rounded-xl" />
+        ))}
+        {img.map((foto) => (
+            <img src={foto.url} alt="Postre" class="w-full h-64 md:h-96  object-cover rounded-xl" />
+        ))}
+    </div>
+</div>

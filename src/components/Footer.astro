@@ -1,0 +1,34 @@
+---
+import { FiSmartphone } from "react-icons/fi";
+import { HiOutlineMapPin } from "react-icons/hi2";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { LuMail } from "react-icons/lu";
+import { FiPhone } from "react-icons/fi";
+---
+
+<footer class="h-fit w-full rounded-t-4xl bg-rojo mt-24">
+    <div class="container p-4 mx-auto py-12 gap-4 grid grid-cols-1 md:grid-cols-4">
+        <div class="flex flex-col">
+            <h4 class="rosa text-4xl font-semibold!">MELKUPS</h4>
+            <p class="rosa cursiva text-md">Para que no te falte lo dulce</p>
+        </div>
+        <div></div>
+        <div class="flex flex-col ">
+            <h4 class="rosa text-2xl  mb-2">Contactanos</h4>
+            <div class="flex flex-col">
+                <span class="rosa flex items-center gap-2"><FiSmartphone/>+11 2341-2567</span>
+                <span class="rosa flex items-center gap-2"><FiPhone/>0800 635 5877</span>
+                <span class="rosa flex items-center gap-2"><HiOutlineMapPin/>Av La Plata 1231, Quilmes Oeste.</span>
+                <span class="rosa flex items-center gap-2"><LuMail/>contacto@melkups.com</span>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <h4 class="rosa text-2xl mb-2">Seguinos en las redes</h4>
+            <div class="flex flex-row gap-2">
+                <span class="rosa p-2 rounded-xl border-2 border-white/75 text-xl"><AiOutlineInstagram/></span>
+                <span class="rosa p-2 rounded-xl border-2 border-white/75 text-xl"><FaSquareFacebook/></span>
+            </div>
+        </div>
+    </div>
+</footer>

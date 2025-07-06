@@ -1,0 +1,13 @@
+---
+import MenuDesktop from "./MenuDesktop.astro";
+import MenuMobile from "./MenuMobile";
+---
+
+
+<header class="w-screen bg-black/5 fixed h-18 ">
+ <div class="container  mx-auto px-4 flex justify-between h-full items-center">
+    <span class="font-bold! text-4xl text-white!">MKS</span>
+    <MenuDesktop />
+    <MenuMobile client:only="react" />
+ </div>
+</header>
