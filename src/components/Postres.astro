@@ -1,13 +1,22 @@
 ---
  const img = [
  {
-        url: "https://i.ibb.co/xqCyp6GX/5cdf9fe29d3b35875ae5c61504edceb5.jpg"
+        url: "./batidora.jpeg"
 },
 {
-        url: "https://i.ibb.co/LzLjtSTD/347cd3ae05213156d369b78f750dae33.jpg"
+        url: "./batidora2.jpeg"
 },
 {
-        url: "https://i.ibb.co/Csv2VNQ2/a96c678dd8757e4b1344c7b46476d7dc.jpg"
+        url: "./cereza.jpeg"
+},
+{
+        url: "./chocotorta.jpeg"
+},
+{
+        url: "./chocotorta2.jpeg"
+},
+{
+        url: "./postrePlano.jpg"
 },
  ]
 ---
@@ -19,9 +28,6 @@
     <div class="grid grid-cols-1 xl:grid-cols-3 container p-4 mx-auto gap-4">
         {img.map((foto) => (
             <img src={foto.url} alt="Postre" class="w-full h-64 md:h-96 object-cover rounded-xl" />
-        ))}
-        {img.map((foto) => (
-            <img src={foto.url} alt="Postre" class="w-full h-64 md:h-96  object-cover rounded-xl" />
         ))}
     </div>
 </div>
