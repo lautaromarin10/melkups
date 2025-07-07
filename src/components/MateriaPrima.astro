@@ -1,30 +1,37 @@
 ---
+import { toCodes } from "astro:i18n"
+import { Badge } from "./ui/badge"
  const img = [
  {
         url: "./galletita.jpg",
-        name: "Galletitas trituradas"
+        name: "Galletitas trituradas",
+        texto: "Elaboradas con cacao real y sin conservantes, nuestras galletitas trituradas aportan una base crocante y sabrosa. Hechas en Argentina, son ideales para postres irresistibles."
 },
 {
         url: "./quesoCrema.jpg",
-        name: "Queso crema"
+        name: "Queso crema",
+        texto: "Cremoso, fresco y libre de gluten, este queso crema sin aditivos le da una textura suave y delicada a cada preparación. Perfecto para lograr ese sabor casero que nos caracteriza."
 },
 {
         url: "./ddl.jpg",
-        name: "Dulce de leche"
+        name: "Dulce de leche",
+        texto: "Nuestro dulce de leche repostero premium está hecho con leche entera y sin agregados artificiales. De origen nacional, garantiza un sabor intenso y auténtico en cada cucharada"
 },
  ]
 ---
 
 
 
-<div class="flex flex-col" id="mPrima">
-    <h2 class="container p-4 text-4xl md:text-6xl mx-auto mb-2 xl:mb-2">Materia prima</h2>
-    <div class="grid grid-cols-auto md:grid-cols-3 container p-4 mx-auto gap-4">
+<div class="flex flex-col container p-4 mx-auto my-16" id="mPrima">
+    <h2 class=" text-4xl md:text-6xl mb-2 xl:mb-2">Materia prima</h2>
+    <div class="grid grid-cols-auto md:grid-cols-3 mx-auto gap-4">
         {img.map((foto) => (
             <div class="flex flex-col">
             <img src={foto.url} alt="Postre" class="w-full h-42 md:h-64 object-cover rounded-xl" />
-            <p class="mt-2 text-2xl cursiva">{foto.name}</p>
+            <h3 class="mt-2 text-2xl cursiva">{foto.name}</h3>
+                <p>{foto.texto}</p>
             </div>
+            
         ))}
     </div>
 </div>

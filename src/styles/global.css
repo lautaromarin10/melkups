@@ -2,8 +2,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+:root {
+  --rosa: #e878aa;
+}
+
 html {
-  background-color: #f7b2b5;
+  /* background-color: #f7b2b5; */
+  background-color: var(--rosa);
+
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
@@ -51,13 +57,13 @@ span {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-background: #f7b2b5;
+  --color-background: var(--rosa);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  --color-primary: #f7b2b5;
+  --color-primary: var(--rosa);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: #e30613;
   --color-secondary-foreground: var(--secondary-foreground);
