@@ -3,7 +3,7 @@
 @import "tw-animate-css";
 
 :root {
-  --rosa: #e878aa;
+  --rosa: #fb93c1;
 }
 
 html {
@@ -49,7 +49,7 @@ span {
 }
 
 .rosa {
-  color: #f7b2b5;
+  color: var(--rosa);
 }
 
 @theme inline {
