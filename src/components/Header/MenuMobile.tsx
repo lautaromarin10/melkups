@@ -20,23 +20,26 @@ const MenuMobile = () => {
             <MdMenu />
           </Button>
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent className="border-0!">
           <SheetHeader>
-            <SheetTitle>Menu</SheetTitle>
+            <SheetTitle>
+              <span>Menu</span>
+            </SheetTitle>
           </SheetHeader>
-          <ul className="flex flex-col p-4 gap-4">
+          <ul className="flex flex-col p-4 gap-2">
             {menuLinks.map((menu) => (
-              <li className="text-white w-full duration-300 hover:text-secondary">
-                <a href={menu.to}>{menu.label}</a>
+              <li
+                className="text-white w-full duration-300 hover:text-secondary"
+                key={menu.to}
+              >
+                <SheetClose asChild>
+                  <a href={menu.to}>{menu.label}</a>
+                </SheetClose>
               </li>
             ))}
           </ul>
           <SheetFooter>
-            <SheetClose asChild>
-              <Button variant="secondary" className="text-white!">
-                Cerrar
-              </Button>
-            </SheetClose>
+            <span className="font-semibold!">MELKUPS</span>
           </SheetFooter>
         </SheetContent>
       </Sheet>
